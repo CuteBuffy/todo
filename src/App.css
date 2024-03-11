@@ -1,0 +1,163 @@
+.page__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo__container {
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 1rem 3rem;
+  width: 100%;
+  max-width: 60rem;
+}
+
+.input__title {
+  text-transform: uppercase;
+  color: #777676;
+  font-size: 3rem;
+  letter-spacing: 0.08rem;
+  text-align: center;
+}
+
+.todo__input {
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid #cccccc;
+  padding: 0.4rem 0.6rem;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  flex: 5;
+}
+
+.todo__input:focus {
+  outline: none;
+  filter: drop-shadow(0 0 0.2rem rgb(91, 164, 233));
+}
+
+.todo__main {
+  width: 100%;
+}
+
+.todo__form {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.2rem;
+}
+
+.form__btn {
+  flex: 1;
+  border-radius: 7px;
+  background-color: rgb(74, 180, 106);
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.btn {
+  transition: opacity 0.2s, transform 0.3s;
+}
+
+.btn:hover {
+  opacity: 70%;
+  transform: scale(0.9);
+}
+
+.todos__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.todos__container .todo:not(:last-child) {
+  border-bottom: 1px solid #cecece;
+}
+
+.todo {
+  min-height: 2.5rem;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #777676;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.todos__container {
+  margin-top: 0.5rem;
+}
+
+.todo__delete {
+  background-color: #f00;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 4px 0;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo__delete>img {
+  width: 20px;
+  height: 20px;
+}
+
+.todo__text {
+  flex: 5;
+  width: 36rem;
+  word-break: break-all;
+}
+
+.todo__empty {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #c5c5c5;
+}
+
+@media (max-width: 768px) {
+  .input__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .todo__container {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .input__title {
+    font-size: 2rem;
+  }
+
+  .page__wrapper {
+    border: 1px solid red;
+    min-height: 100vh;
+  }
+
+  .todo__container {
+    padding: 5rem 0;
+  }
+
+  .todo__wrapper {
+    padding: 1rem 1rem;
+  }
+}
